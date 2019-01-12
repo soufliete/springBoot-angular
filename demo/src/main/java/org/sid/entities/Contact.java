@@ -12,6 +12,20 @@ import javax.persistence.TemporalType;
 @Entity
 public class Contact implements Serializable{
 	
+	
+	public Contact() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Contact(String nom, String prenom, Date dateNaissance, String email, long tel, String photo) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.dateNaissance = dateNaissance;
+		this.email = email;
+		this.tel = tel;
+		this.photo = photo;
+	}
 	@Id
 	@GeneratedValue
 	private long Id;
